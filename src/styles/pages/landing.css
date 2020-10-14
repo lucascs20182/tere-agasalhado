@@ -1,0 +1,97 @@
+#page-landing {
+    background: rgb(0, 44, 70);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-landing .content-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    
+    height: 100%;
+    max-height: 680px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+
+    position: relative;
+
+    background: url('../../assets/landing.png') no-repeat 80% center;
+}
+
+#page-landing .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#page-landing .logo p {
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+#page-landing .content-wrapper main {
+    max-width: 350px;
+}
+
+#page-landing .content-wrapper main h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+#page-landing .content-wrapper main p { 
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.content-wrapper .location {
+    margin-top: 30px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    font-size: 24px;
+    line-height: 34px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.content-wrapper .location strong {
+    font-weight: 800;
+}
+
+.content-wrapper .enter-app {
+    margin-bottom: 30px;    
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 80px;
+    height: 80px;
+    background: rgb(247, 150, 51);
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s;
+}
+
+.content-wrapper .enter-app:hover {
+    background: rgb(110, 193, 228);
+}

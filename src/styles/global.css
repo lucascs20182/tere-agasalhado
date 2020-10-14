@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background: rgb(235, 242, 245);
+}
+
+/* the others don't use the default font of the body */
+body, input, button, textarea {
+    font: 600 18px Nunito, sans-serif;
+}
