@@ -1,5 +1,78 @@
 #page-landing {
-    background: rgb(0, 44, 70);
+    background: linear-gradient(329.54deg, #014065 0%, #002c46 100%);
+
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+#content-wrapper {
+    margin: auto;
+
+    width: 90%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo p {
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.location, h1, section p {
+    height: 16vh
+}
+
+.enter-app {
+    width: 8rem;
+    height: 8rem;
+    background: rgb(247, 150, 51);
+
+    border: none;
+    border-radius: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    transition: background .2s;
+}
+
+.enter-app:hover {
+    background: rgb(110, 193, 228); 
+}
+
+.logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+.main h1 {
+    animation-delay: 150ms;
+}
+
+.main section p {
+    animation-delay: 200ms;
+}
+
+.enter-app {
+    animation-delay: 250ms;
+}
+
+/*#page-landing {
+    background: linear-gradient(329.54deg, #014065 0%, #002c46 100%);
     width: 100vw;
     height: 100vh;
 
@@ -23,18 +96,6 @@
     position: relative;
 
     background: url('../../assets/landing.png') no-repeat 80% center;
-}
-
-#page-landing .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#page-landing .logo p {
-    padding-left: 10px;
-    font-size: 24px;
-    font-weight: 800;
 }
 
 #page-landing .content-wrapper main {
@@ -95,3 +156,4 @@
 .content-wrapper .enter-app:hover {
     background: rgb(110, 193, 228);
 }
+*/

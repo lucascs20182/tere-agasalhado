@@ -3,15 +3,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+:root {
+    font-size: 42.5%;
 }
 
 body {
+    height: 100vh;
+    
     color: rgb(255, 255, 255);
     background: rgb(235, 242, 245);
 }
 
 /* the others don't use the default font of the body */
+/* / represents line-height */
 body, input, button, textarea {
-    font: 600 18px Nunito, sans-serif;
+    font: 400 1.8rem/1 'Nunito', sans-serif;
 }
