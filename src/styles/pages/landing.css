@@ -1,3 +1,6 @@
+/* the style order try to follow the same html order */
+
+/* mobile first */
 #page-landing {
     background: linear-gradient(329.54deg, #014065 0%, #002c46 100%);
 
@@ -7,17 +10,24 @@
     display: flex;
 }
 
-
-#content-wrapper {
+#container {
     margin: auto;
 
-    width: 90%;
+    width: min(90%, 112rem);
+}
+
+.location, h1, .visit p {
+    height: 16vh
 }
 
 .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+
+    animation-delay: 50ms;
 }
 
 .logo p {
@@ -26,11 +36,24 @@
     font-weight: 800;
 }
 
-.location, h1, section p {
-    height: 16vh
+.location {
+    animation-delay: 100ms;
 }
 
-.enter-app {
+.main h1 {
+    animation-delay: 150ms;
+
+    /* clamp(min, ideal, max) */
+    font-size: clamp(4rem, 8vw, 8.4rem);
+}
+
+.visit p {
+    animation-delay: 200ms;
+
+    padding-top: 50px;
+}
+
+.visit a {
     width: 8rem;
     height: 8rem;
     background: rgb(247, 150, 51);
@@ -45,115 +68,66 @@
     margin: auto;
 
     transition: background .2s;
-}
 
-.enter-app:hover {
-    background: rgb(110, 193, 228); 
-}
-
-.logo {
-    animation-delay: 50ms;
-}
-
-.location {
-    animation-delay: 100ms;
-}
-
-.main h1 {
-    animation-delay: 150ms;
-}
-
-.main section p {
-    animation-delay: 200ms;
-}
-
-.enter-app {
     animation-delay: 250ms;
 }
 
-/*#page-landing {
-    background: linear-gradient(329.54deg, #014065 0%, #002c46 100%);
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.visit a:hover {
+    background: rgb(110, 193, 228); 
 }
 
-#page-landing .content-wrapper {
-    width: 100%;
-    max-width: 1100px;
-    
-    height: 100%;
-    max-height: 680px;
+/* desktop */
+@media(min-width:760px) {
+    #container {
+        background: url('../../assets/landing.png') 
+            no-repeat 80% / clamp(40rem, 54vw, 76rem);
+    }
 
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-around;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-    position: relative;
+    .location, h1, .visit p {
+        height: initial;
+        text-align: initial;
+    }
 
-    background: url('../../assets/landing.png') no-repeat 80% center;
+    .logo {
+        padding-bottom: 0;
+    }
+
+    .location {
+        text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+
+    main h1 {
+        font-weight: bold;
+        line-height: .88;
+
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+
+        width: min(300px, 80%);
+    }
+
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 20vw, 30rem);
+
+        padding-top: 0;
+    }
+
+    .visit a {
+        margin: initial;
+    }
 }
-
-#page-landing .content-wrapper main {
-    max-width: 350px;
-}
-
-#page-landing .content-wrapper main h1 {
-    font-size: 56px;
-    font-weight: 900;
-    line-height: 50px;
-}
-
-#page-landing .content-wrapper main p { 
-    margin-top: 40px;
-    font-size: 24px;
-    line-height: 34px;
-}
-
-.content-wrapper .location {
-    margin-top: 30px;
-
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    font-size: 24px;
-    line-height: 34px;
-
-    display: flex;
-    flex-direction: column;
-
-    text-align: right;
-}
-
-.content-wrapper .location strong {
-    font-weight: 800;
-}
-
-.content-wrapper .enter-app {
-    margin-bottom: 30px;    
-
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    width: 80px;
-    height: 80px;
-    background: rgb(247, 150, 51);
-    border-radius: 30px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: background-color 0.2s;
-}
-
-.content-wrapper .enter-app:hover {
-    background: rgb(110, 193, 228);
-}
-*/
