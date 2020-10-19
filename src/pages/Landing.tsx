@@ -30,7 +30,7 @@ function Landing() {
 
           <section>
             <p className="animate-up">
-              As doações serão entregues a moradores de rua, orfanatos e a casas
+              As doações serão entregues a moradores de rua, orfanatos e casas
               de repouso para idosos.
             </p>
 
