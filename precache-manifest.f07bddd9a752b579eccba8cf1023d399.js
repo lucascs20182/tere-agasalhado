@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f758ae0a7f44e9fe2b35531fd00dd30f",
+    "revision": "18d354e0ab79964f68f25cc857896ff9",
     "url": "/tere-agasalhado-web/index.html"
   },
   {
-    "revision": "cb8c715d1bc0d88114bc",
-    "url": "/tere-agasalhado-web/static/css/main.7b160026.chunk.css"
+    "revision": "5889425c8bd5d35ec16c",
+    "url": "/tere-agasalhado-web/static/css/main.fd7cac2e.chunk.css"
   },
   {
     "revision": "eeaf9c1c41b0b315b77c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tere-agasalhado-web/static/js/2.1abddba4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cb8c715d1bc0d88114bc",
+    "revision": "5889425c8bd5d35ec16c",
     "url": "/tere-agasalhado-web/static/js/main.cbb47840.chunk.js"
   },
   {
