@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tere-agasalhado-web/static/css/main.7b160026.chunk.css",
-    "main.js": "/tere-agasalhado-web/static/js/main.50cf7edd.chunk.js",
-    "main.js.map": "/tere-agasalhado-web/static/js/main.50cf7edd.chunk.js.map",
+    "main.js": "/tere-agasalhado-web/static/js/main.cbb47840.chunk.js",
+    "main.js.map": "/tere-agasalhado-web/static/js/main.cbb47840.chunk.js.map",
     "runtime-main.js": "/tere-agasalhado-web/static/js/runtime-main.c33cc3c3.js",
     "runtime-main.js.map": "/tere-agasalhado-web/static/js/runtime-main.c33cc3c3.js.map",
     "static/js/2.1abddba4.chunk.js": "/tere-agasalhado-web/static/js/2.1abddba4.chunk.js",
     "static/js/2.1abddba4.chunk.js.map": "/tere-agasalhado-web/static/js/2.1abddba4.chunk.js.map",
     "index.html": "/tere-agasalhado-web/index.html",
-    "precache-manifest.434bc9754f2a6f49b9d999244698df5e.js": "/tere-agasalhado-web/precache-manifest.434bc9754f2a6f49b9d999244698df5e.js",
+    "precache-manifest.a3308dfe6c2c5e9946f58b96963f619e.js": "/tere-agasalhado-web/precache-manifest.a3308dfe6c2c5e9946f58b96963f619e.js",
     "service-worker.js": "/tere-agasalhado-web/service-worker.js",
     "static/css/main.7b160026.chunk.css.map": "/tere-agasalhado-web/static/css/main.7b160026.chunk.css.map",
     "static/js/2.1abddba4.chunk.js.LICENSE.txt": "/tere-agasalhado-web/static/js/2.1abddba4.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.c33cc3c3.js",
     "static/js/2.1abddba4.chunk.js",
     "static/css/main.7b160026.chunk.css",
-    "static/js/main.50cf7edd.chunk.js"
+    "static/js/main.cbb47840.chunk.js"
   ]
 }
