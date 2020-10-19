@@ -6,6 +6,7 @@
 
     text-align: center;
     min-height: 100vh;
+    min-width: 439px;
 
     display: flex;
 }
@@ -16,7 +17,7 @@
     width: min(90%, 112rem);
 }
 
-.location, h1, .visit p {
+.location, h1, section p {
     height: 16vh
 }
 
@@ -47,13 +48,13 @@
     font-size: clamp(4rem, 8vw, 8.4rem);
 }
 
-.visit p {
+section p {
     animation-delay: 200ms;
 
     padding-top: 50px;
 }
 
-.visit a {
+.visit {
     width: 8rem;
     height: 8rem;
     background: rgb(247, 150, 51);
@@ -72,7 +73,7 @@
     animation-delay: 250ms;
 }
 
-.visit a:hover {
+.visit:hover {
     background: rgb(110, 193, 228); 
 }
 
@@ -89,7 +90,7 @@
         justify-content: space-between;
     }
 
-    .location, h1, .visit p {
+    .location, h1, section p {
         height: initial;
         text-align: initial;
     }
@@ -113,13 +114,13 @@
         width: min(300px, 80%);
     }
 
-    .visit {
+    section {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .visit p {
+    section p {
         font-size: 2.4rem;
         line-height: 1.5;
         width: clamp(20rem, 20vw, 30rem);
@@ -127,7 +128,7 @@
         padding-top: 0;
     }
 
-    .visit a {
+    .visit {
         margin: initial;
     }
 }
