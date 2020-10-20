@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tere-agasalhado-web/precache-manifest.612dbef29ab2a7a92b8fbb097f775bd4.js"
+  "/tere-agasalhado-web/precache-manifest.f3ffa4e3735da77d2fbd1aec22ace254.js"
 );
 
 self.addEventListener('message', (event) => {
