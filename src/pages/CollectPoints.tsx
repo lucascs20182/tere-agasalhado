@@ -17,7 +17,7 @@ function CollectPoints() {
                     <img src={logoImg} alt="Logomarca do Terê Agasalhado" />
 
                     <h2>Escolha um ponto de coleta no mapa</h2>
-                    <p>Muitas pessoas estão esperando a sua doação :)</p>
+                    <p>Muitas pessoas estão esperando a sua doação.</p>
                 </header>
                 <footer>
                     <strong>Teresópolis</strong>
@@ -30,7 +30,7 @@ function CollectPoints() {
                     <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             </Map>
 
-            <Link to="" className="create-collect-point">
+            <Link to="" className="create-collect-point" title="Cadastre um ponto de coleta">
                 <FiPlus size={32} color="#fff" />
             </Link>
         </div>

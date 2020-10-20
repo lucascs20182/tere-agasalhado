@@ -2,43 +2,48 @@
     width: 100vw;
     height: 100vh;
 
-    position: relative;
     display: flex;
+    flex-direction: column;
+
+    position: relative;
 }
 
 #page-map aside {
-    width: 20%;
+    padding: 10px;
     background: linear-gradient(329.54deg, #014065 0%, #002c46 100%);
-    padding: 80px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
 }
 
 #page-map aside header {
+    align-items: center;
+    
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 #page-map aside h2 {
     font-size: 35px;
     font-weight: 700;
     line-height: 32px;
-    margin-top: 64px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 #page-map aside p {
     line-height: 28px;
     margin-top: 24px;
+    text-align: center;
 }
 
 #page-map aside footer {
+    line-height: 24px;
+    margin-top: 24px;
+    text-align: center;
+
     display: flex;
     flex-direction: column;
-    
-    line-height: 24px;
 }
 
 #page-map aside footer strong {
@@ -70,4 +75,38 @@
 
 #page-map .create-collect-point:hover {
     background: rgb(110, 193, 228); 
+}
+
+/* desktop */
+@media(min-width:760px) {
+    #page-map {
+        flex-direction: row;
+    }
+    
+    #page-map aside {
+        padding: 70px;
+        width: 30%;
+
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    #page-map aside header {
+        align-items: flex-start;
+        
+    }
+    
+    #page-map aside h2 {
+        margin-top: 70px;
+        text-align: start;
+    }
+    
+    #page-map aside p {
+        margin-top: 70px;
+        text-align: start;
+    }
+    
+    #page-map aside footer {
+        margin-top: 0;
+    }
 }
