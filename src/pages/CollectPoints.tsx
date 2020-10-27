@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiPlus } from 'react-icons/fi';
-import { Map, TileLayer } from 'react-leaflet';
+import { FiPlus, FiArrowRight } from 'react-icons/fi';
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import Leaflet from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
 
 import logoImg from '../assets/mark.png';
 
 import '../styles/pages/collectPoints.css';
+
+const mapIcon = Leaflet.icon({ 
+    iconUrl: logoImg,
+    
+    popupAnchor: [170, 20]
+});
 
 function CollectPoints() {
     return (
@@ -25,9 +32,19 @@ function CollectPoints() {
                 </footer>
             </aside>
 
-            <Map center={[-22.4151909, -42.976899]} zoom={15} 
+            <Map center={[-22.4151909, -42.976899]} zoom={30} 
                 style={{ width: '100%', height: '100%' }}>
                     <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+
+                    <Marker icon={mapIcon} position={[-22.4151909, -42.976899]}>
+                        <Popup closeButton={false} minWidth={240} maxWidth={240} 
+                            className="map-popup">
+                                Lar das Meninas
+                                <Link to="">
+                                    <FiArrowRight size={20} color="#fff" />
+                                </Link>
+                        </Popup>
+                    </Marker>
             </Map>
 
             <Link to="" className="create-collect-point" title="Cadastre um ponto de coleta">
