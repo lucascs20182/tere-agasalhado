@@ -8,7 +8,7 @@ import 'leaflet/dist/leaflet.css';
 
 import logoImg from '../assets/mark.png';
 
-import '../styles/pages/collectPoints.css';
+import '../styles/pages/collectPointsMap.css';
 
 const mapIcon = Leaflet.icon({ 
     iconUrl: logoImg,
@@ -40,14 +40,14 @@ function CollectPoints() {
                         <Popup closeButton={false} minWidth={240} maxWidth={240} 
                             className="map-popup">
                                 Lar das Meninas
-                                <Link to="">
+                                <Link to="/collectpoints/1">
                                     <FiArrowRight size={20} color="#fff" />
                                 </Link>
                         </Popup>
                     </Marker>
             </Map>
 
-            <Link to="" className="create-collect-point" title="Cadastre um ponto de coleta">
+            <Link to="/collectpoints/create" className="create-collect-point" title="Cadastre um ponto de coleta">
                 <FiPlus size={32} color="#fff" />
             </Link>
         </div>
