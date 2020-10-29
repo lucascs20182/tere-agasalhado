@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c74368aa7dc3e8fff65e8712eab4329",
+    "revision": "cc4ad4d10eb9573b9c94539c40719bb5",
     "url": "/tere-agasalhado-web/index.html"
   },
   {
-    "revision": "06ac38c2a9e0820c8130",
+    "revision": "5eae15c7d430162540b9",
     "url": "/tere-agasalhado-web/static/css/2.bcddf60d.chunk.css"
   },
   {
-    "revision": "fa2aa684cd7f12af52d3",
-    "url": "/tere-agasalhado-web/static/css/main.2d91a615.chunk.css"
+    "revision": "bed56993497cbe23ab5e",
+    "url": "/tere-agasalhado-web/static/css/main.d8394f7c.chunk.css"
   },
   {
-    "revision": "06ac38c2a9e0820c8130",
-    "url": "/tere-agasalhado-web/static/js/2.dee8d84f.chunk.js"
+    "revision": "5eae15c7d430162540b9",
+    "url": "/tere-agasalhado-web/static/js/2.278f5927.chunk.js"
   },
   {
     "revision": "0580f66cff7a7b2e7b5c118fd842bcfd",
-    "url": "/tere-agasalhado-web/static/js/2.dee8d84f.chunk.js.LICENSE.txt"
+    "url": "/tere-agasalhado-web/static/js/2.278f5927.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fa2aa684cd7f12af52d3",
-    "url": "/tere-agasalhado-web/static/js/main.fbd19cdb.chunk.js"
+    "revision": "bed56993497cbe23ab5e",
+    "url": "/tere-agasalhado-web/static/js/main.331419f1.chunk.js"
   },
   {
     "revision": "f61608a40f6b25ada884",
