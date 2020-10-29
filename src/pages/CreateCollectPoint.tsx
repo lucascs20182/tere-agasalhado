@@ -1,34 +1,19 @@
 import React from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
-import Leaflet from 'leaflet';
-import { useHistory } from 'react-router-dom';
-
-import { FiArrowLeft, FiPlus } from "react-icons/fi";
-
-import logoImg from '../assets/mark.png';
+import { FiPlus } from "react-icons/fi";
 
 import '../styles/pages/createCollectPoint.css';
 
-const mapIcon = Leaflet.icon({ 
-  iconUrl: logoImg,
-  
-  popupAnchor: [170, 20]
-});
+import Sidebar from '../components/Sidebar';
+
+import mapIcon from '../utils/mapIcon';
+
 
 export default function CreateCollectPoint() {
-  const { goBack } = useHistory();
-
   return (
     <div id="page-create-collect-point"> 
-      <aside>
-        <img src={logoImg} alt="Terê Agasalhado"/>
 
-        <footer>
-          <button type="button" onClick={goBack}>
-            <FiArrowLeft size={24} color="#fff" />
-          </button>
-        </footer>
-      </aside>
+      <Sidebar />
 
       <main>
         <form className="create-collect-point-form">

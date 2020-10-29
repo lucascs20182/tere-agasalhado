@@ -13,7 +13,9 @@ body {
     height: 100vh;
     
     color: rgb(255, 255, 255);
+
     background: #ebf2f5;
+    
 }
 
 /* the others don't use the default font of the body */

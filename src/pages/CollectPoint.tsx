@@ -1,34 +1,20 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { FiClock, FiInfo, FiArrowLeft } from "react-icons/fi";
+import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
-import { useHistory } from 'react-router-dom';
-import Leaflet from 'leaflet';
-
-import logoImg from '../assets/mark.png';
 
 import '../styles/pages/collectPoint.css';
 
-const mapIcon = Leaflet.icon({ 
-  iconUrl: logoImg,
-  
-  popupAnchor: [170, 20]
-});
+import Sidebar from '../components/Sidebar';
+
+import mapIcon from '../utils/mapIcon';
+
 
 export default function CollectPoint() {
-  const { goBack } = useHistory();
-
   return (
     <div id="page-collect-point">
-      <aside>
-        <img src={logoImg} alt="Terê Agasalhado"/>
 
-        <footer>
-          <button type="button" onClick={goBack}>
-            <FiArrowLeft size={24} color="#fff" />
-          </button>
-        </footer>
-      </aside>
+      <Sidebar />
 
       <main>
         <div className="collect-point-details">

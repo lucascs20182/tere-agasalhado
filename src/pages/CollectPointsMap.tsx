@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiPlus, FiArrowRight } from 'react-icons/fi';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import Leaflet from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
 
@@ -10,11 +9,8 @@ import logoImg from '../assets/mark.png';
 
 import '../styles/pages/collectPointsMap.css';
 
-const mapIcon = Leaflet.icon({ 
-    iconUrl: logoImg,
-    
-    popupAnchor: [170, 20]
-});
+import mapIcon from '../utils/mapIcon';
+
 
 function CollectPoints() {
     return (
